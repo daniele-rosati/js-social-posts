@@ -58,12 +58,15 @@ const posts = [
 
 
 
-const changeColorButton = document.getElementById('like-counter-1');
+document.addEventListener("click", myFunction);
+
+function myFunction() {
+    const likeButton = document.getElementsByClassName('like-button')[0];
+ 
+    likeButton.style.color = 'green';
+};
 
 
-changeColorButton.addEventListener('click', function () {
-  document.body.style.color = 'green';
-});
 
 
 
